@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">央音在线</string>
+    <string name="title_home">发现</string>
+    <string name="title_vip">会员</string>
+    <string name="title_buy">已购</string>
+    <string name="title_my">我的</string>
+</resources>

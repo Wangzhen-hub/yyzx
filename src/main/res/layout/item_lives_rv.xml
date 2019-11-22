@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#fff"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="15dp">
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/lives_img"
+        android:layout_width="match_parent"
+        android:layout_height="190dp"
+        app:roundedCornerRadius="10dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp">
+
+        <TextView
+            android:id="@+id/lives_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/lives_teacher"
+            android:layout_alignParentLeft="true"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:textColor="#000"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/lives_teacher"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@id/lives_teacher_name"
+            android:text="讲师:"
+            android:textColor="#B4B7C7"
+            android:textSize="11sp" />
+
+        <TextView
+            android:id="@+id/lives_teacher_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:textColor="#B4B7C7"
+            android:textSize="11sp" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:id="@+id/lives_teacher_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="9"
+            android:textColor="#B4B7C7"
+            android:textSize="11sp" />
+
+        <TextView
+            android:id="@+id/lives_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:textColor="@color/colorPrimary"
+            android:textSize="11sp" />
+
+    </LinearLayout>
+
+</LinearLayout>
